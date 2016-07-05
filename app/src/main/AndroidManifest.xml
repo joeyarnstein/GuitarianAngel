@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".BrowseMuisc" />
-        <activity android:name=".BrowseLessons"></activity>
+        <activity android:name=".BrowseLessons" />
+        <activity android:name=".ShowTablature"></activity>
     </application>
 
 </manifest>

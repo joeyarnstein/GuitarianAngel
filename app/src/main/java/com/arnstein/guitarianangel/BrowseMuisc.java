@@ -32,6 +32,10 @@ public class BrowseMuisc extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String bandOrSong = ((TextView)view).getText().toString();
                 Toast.makeText(BrowseMuisc.this, bandOrSong, Toast.LENGTH_LONG).show();
+
+                Intent intent3 = new Intent(BrowseMuisc.this, BrowseLessons.class);
+                intent3.putExtra("getThisTab", bandOrSong);
+                startActivity(intent3);
             }
         });
 
