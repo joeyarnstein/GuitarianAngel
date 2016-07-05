@@ -17,6 +17,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mSearchButton.setOnClickListener(new View.OnClickListener() { //add click listener
 
+            @Override
+            public void onClick(View v) {
+                String searchText = mEditText.getText().toString();
+                Intent intent = new Intent(MainActivity.this, BrowseMuisc.class);
+                intent.putExtra("textSearch", searchText);
+                startActivity(intent);
+            }
+        });
     }
 }
