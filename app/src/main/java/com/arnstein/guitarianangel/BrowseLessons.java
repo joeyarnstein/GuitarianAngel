@@ -8,18 +8,18 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class BrowseMuisc extends AppCompatActivity {
-    @Bind(R.id.resultTextView) TextView mResultTextView;
+public class BrowseLessons extends AppCompatActivity {
+    @Bind(R.id.lessonsTextView) TextView mLessonsTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_browse_muisc);
+        setContentView(R.layout.activity_browse_lessons);
         ButterKnife.bind(this);
 
-        Intent intent = getIntent();
-        String tabSearchName = intent.getStringExtra("tablatureSearch");
-        mResultTextView.setText("Tablature for " + tabSearchName);
+        Intent intent2 = getIntent();
+        String lessonSearchName = intent2.getStringExtra("lessonSearch");
+        mLessonsTextView.setText("Lessons related to " + lessonSearchName);
 
     }
 }

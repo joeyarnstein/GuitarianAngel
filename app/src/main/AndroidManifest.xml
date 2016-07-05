@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BrowseMuisc"></activity>
+        <activity android:name=".BrowseMuisc" />
+        <activity android:name=".BrowseLessons"></activity>
     </application>
 
 </manifest>

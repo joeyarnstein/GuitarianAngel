@@ -5,13 +5,6 @@
     android:layout_height="match_parent"
     tools:context="com.arnstein.guitarianangel.MainActivity"
     android:background="#000000">
-    <!--<?xml version="1.0" encoding="utf-8"?>-->
-    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--xmlns:tools="http://schemas.android.com/tools"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--tools:context="com.breakstuff.myrestaurants.MainActivity"-->
-        <!--android:background="#000000">-->
 
     <ImageView
         android:layout_width="wrap_content"
@@ -36,17 +29,33 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Browse Lessons"
-        android:id="@+id/searchMusicButton"
+        android:text="Browse Tablature"
+        android:id="@+id/searchTabButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_above="@+id/searchMusicButton"
+        android:id="@+id/searchTablatureTextEdit"
+        android:layout_above="@+id/searchTabButton"
         android:layout_centerHorizontal="true"
-        android:text="search song or band or lesson subject" />
+        android:text="Search by Song or Band" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Lesson"
+        android:id="@+id/searchLessonButton"
+        android:layout_above="@+id/searchTablatureTextEdit"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchLessonsTextEdit"
+        android:layout_above="@+id/searchLessonButton"
+        android:layout_centerHorizontal="true"
+        android:text="Search Lessons by Subject" />
 
 </RelativeLayout>
